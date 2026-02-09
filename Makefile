@@ -19,10 +19,10 @@ help:
 	@echo "  clean        - Clean up temporary files"
 	@echo ""
 	@echo "Environment variables:"
-	@echo "  DATASET_STORE - Root path for dataset store (default: /ml-data-store)"
+	@echo "  DATASET_STORE - Root path for dataset store (default: ../ml-data-store)"
 	@echo "  EXP_DIR       - Experiment directory for eval/export commands"
 
-DATASET_STORE ?= /ml-data-store
+DATASET_STORE ?= ../ml-data-store
 
 setup:
 	@echo "Creating virtual environment..."
