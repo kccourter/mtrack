@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ML artifacts (large files - store pointers only)
+*.onnx
+*.bin
+*.pt
+*.pth
+*.h5
+*.pb
+*.safetensors
+
+# Keep small artifacts in experiments/ but exclude large model files
+experiments/*/artifacts/*.bin
+experiments/*/artifacts/*.pt
+experiments/*/artifacts/*.pth
+experiments/*/artifacts/*.h5
+
+# Dataset store (not tracked in experiment repo)
+/ml-data-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+.cache/

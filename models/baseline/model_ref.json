@@ -1,0 +1,8 @@
+{
+  "provider": "huggingface",
+  "model_id": "lane99/resnet_mnist_digits",
+  "revision": "main",
+  "task": "image-classification",
+  "architecture": "ResNet",
+  "notes": "ResNet baseline for MNIST digit classification - mtrack demo"
+}

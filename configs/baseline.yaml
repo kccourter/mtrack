@@ -1,0 +1,37 @@
+# Baseline Configuration for mtrack MNIST Experiments
+
+model:
+  provider: huggingface
+  model_id: lane99/resnet_mnist_digits
+  revision: main
+
+dataset:
+  dataset_id: mnist
+  revision_id: D0001  # Will be set after dataset store is initialized
+  provider: huggingface_datasets  # or torchvision
+
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0
+  dropout: 0.0
+  epochs: 10
+  seed: 42
+  optimizer: adam
+
+evaluation:
+  batch_size: 128
+  metrics:
+    - accuracy
+    - loss
+    - precision_macro
+    - recall_macro
+
+compute:
+  device: auto  # auto, cpu, cuda, mps
+  num_workers: 4
+
+logging:
+  log_interval: 10  # batches
+  save_checkpoints: true
+  checkpoint_interval: 1  # epochs

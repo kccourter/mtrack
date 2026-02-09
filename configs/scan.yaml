@@ -1,0 +1,50 @@
+# Hyperparameter Scan Configuration
+
+scan:
+  method: random  # grid | random | bayes
+  max_trials: 20
+  seed: 1337
+
+  parameters:
+    learning_rate:
+      distribution: log_uniform
+      min: 1.0e-5
+      max: 5.0e-3
+
+    batch_size:
+      values: [32, 64, 128]
+
+    weight_decay:
+      values: [0.0, 1.0e-4, 1.0e-3]
+
+    dropout:
+      values: [0.0, 0.1, 0.2]
+
+# Base configuration (inherited by all trials)
+base:
+  model:
+    provider: huggingface
+    model_id: lane99/resnet_mnist_digits
+    revision: main
+
+  dataset:
+    dataset_id: mnist
+    revision_id: D0001
+    provider: huggingface_datasets
+
+  training:
+    epochs: 10
+    seed: 42
+    optimizer: adam
+
+  evaluation:
+    batch_size: 128
+    metrics:
+      - accuracy
+      - loss
+      - precision_macro
+      - recall_macro
+
+  compute:
+    device: auto
+    num_workers: 4
