@@ -1,0 +1,36 @@
+{
+  "experiment_id": "E0001",
+  "created_utc": "2026-02-09T17:55:05.215076Z",
+  "git": {
+    "commit": "a911317017e64d4a6c18a52addb51e99cfb08498",
+    "branch": "exp1",
+    "dirty_worktree": true
+  },
+  "inputs": {
+    "model": {
+      "provider": "huggingface",
+      "model_id": "lane99/resnet_mnist_digits",
+      "revision": "main"
+    },
+    "dataset": {
+      "dataset_id": "mnist",
+      "revision_id": "D0001",
+      "store": {
+        "type": "local_fs",
+        "root": "../ml-data-store",
+        "relative_path": "mnist/D0001"
+      }
+    },
+    "config": {
+      "path": "configs/baseline.yaml",
+      "resolved_path": "experiments/2026-02-09__mnist__resnet_mnist_digits__E0001/config_resolved.yaml",
+      "config_hash": "sha256:0f829e501079fdead897cb9a2b806fa7c8dc2b9824e53782b84374a335eb0150"
+    }
+  },
+  "outputs": {
+    "metrics_path": "experiments/2026-02-09__mnist__resnet_mnist_digits__E0001/metrics.json",
+    "config_resolved_path": "experiments/2026-02-09__mnist__resnet_mnist_digits__E0001/config_resolved.yaml",
+    "notes_path": "experiments/2026-02-09__mnist__resnet_mnist_digits__E0001/notes.md",
+    "artifacts_dir": "experiments/2026-02-09__mnist__resnet_mnist_digits__E0001/artifacts"
+  }
+}

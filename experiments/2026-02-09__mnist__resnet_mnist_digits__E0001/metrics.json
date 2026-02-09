@@ -1,0 +1,12 @@
+{
+  "primary_metric": {
+    "name": "accuracy",
+    "value": 0.984
+  },
+  "loss": 0.041,
+  "eval": {
+    "accuracy": 0.984,
+    "precision_macro": 0.984,
+    "recall_macro": 0.983
+  }
+}
