@@ -54,7 +54,7 @@ experiments/*/artifacts/*.pth
 experiments/*/artifacts/*.h5
 
 # Dataset store (not tracked in experiment repo)
-/ml-data-store/
+../ml-data-store/
 
 # OS
 .DS_Store
