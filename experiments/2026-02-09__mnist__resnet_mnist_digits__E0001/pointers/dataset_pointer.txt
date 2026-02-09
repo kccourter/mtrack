@@ -1,0 +1,4 @@
+dataset_id=mnist
+dataset_revision=D0001
+data_store_root=../ml-data-store
+relative_path=mnist/D0001

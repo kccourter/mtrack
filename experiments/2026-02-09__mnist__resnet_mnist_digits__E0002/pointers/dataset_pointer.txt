@@ -1,0 +1,7 @@
+dataset_id=mnist
+dataset_revision=D0001
+data_store_root=../ml-data-store
+relative_path=mnist/D0001
+checksum_train=sha256:cbc85375931c3691e181c72ff756c1abf6f457bc0cb57a5c75b0803e0f416bff
+checksum_test=sha256:cbc85375931c3691e181c72ff756c1abf6f457bc0cb57a5c75b0803e0f416bff
+checksum_heldout_new=sha256:d7b1d52b661b385633ace7d538654974fc59cb10d64364b9d95f621615847ecd
