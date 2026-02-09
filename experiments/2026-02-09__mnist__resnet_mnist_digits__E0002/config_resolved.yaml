@@ -1,0 +1,30 @@
+compute:
+  device: auto
+  num_workers: 4
+dataset:
+  dataset_id: mnist
+  provider: huggingface_datasets
+  revision_id: D0001
+evaluation:
+  batch_size: 128
+  metrics:
+  - accuracy
+  - loss
+  - precision_macro
+  - recall_macro
+logging:
+  checkpoint_interval: 1
+  log_interval: 10
+  save_checkpoints: true
+model:
+  model_id: lane99/resnet_mnist_digits
+  provider: huggingface
+  revision: main
+training:
+  batch_size: 64
+  dropout: 0.0
+  epochs: 10
+  learning_rate: 0.001
+  optimizer: adam
+  seed: 42
+  weight_decay: 0.0
